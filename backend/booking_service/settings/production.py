@@ -2,9 +2,12 @@ from .base import *
 import os
 import dj_database_url
 
-SECRET_KEY = os.environ.get("SECRET_KEY", "dev-secret-key")
+SECRET_KEY = os.environ["SECRET_KEY"]
 
-DEBUG = os.environ.get("DEBUG", "True") == "True"
+
+DEBUG = os.environ.get("DEBUG", "False") == "True"
+
+
 
 ALLOWED_HOSTS = ["*"]
 
