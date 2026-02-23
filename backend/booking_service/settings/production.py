@@ -18,5 +18,9 @@ DATABASES = {
         ssl_require=False
     )
 }
+INSTALLED_APPS = [
+    ...
+    'bookings',
+]
 
 REDIS_URL = os.environ.get("REDIS_URL")
