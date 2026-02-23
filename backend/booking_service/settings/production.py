@@ -18,8 +18,7 @@ DATABASES = {
         ssl_require=False
     )
 }
-INSTALLED_APPS = [
-    ...
+INSTALLED_APPS += [
     'bookings',
 ]
 
