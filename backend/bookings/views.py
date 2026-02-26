@@ -4,7 +4,7 @@ from django.shortcuts import render
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
-from backend.bookings.models import Booking
+from .models import Booking
 
 @api_view(["GET"])
 def health(request):
